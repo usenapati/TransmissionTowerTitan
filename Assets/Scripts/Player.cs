@@ -8,5 +8,12 @@ public class Player : MonoBehaviour
     public int moneyAmount;
     public int customerAmount;
 
-    public Node[] nodes;
+    public List<Node> nodes;
+
+    private void Start()
+    {
+        moneyAmount = 100;
+        customerAmount = 0;
+        nodes = new List<Node>();
+    }
 }
